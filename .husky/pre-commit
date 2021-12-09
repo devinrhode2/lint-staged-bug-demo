@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lint-staged
+export DEBUG="lint-staged*"
+export HUSKY_DEBUG="1"
+
+npx lint-staged --debug --verbose
