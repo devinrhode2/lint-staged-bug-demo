@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
 // testing auto-fix
-let a = 'a'
+const a = 'a'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
