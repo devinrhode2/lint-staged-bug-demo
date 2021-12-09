@@ -1,0 +1,44 @@
+{
+  // Nice to have for any repo:
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  // Better safe than sorry:
+  "git.useForcePushWithLease": true,
+
+  // Generic settings for our repo:
+  "editor.tabSize": 2,
+
+  // Format code with prettier onSave:
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable eslint vscode extension:
+  // These settings with with vscode 1.62.3
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.probe": [],
+  "[typescript]": {
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint"
+      // "source.fixAll.glean"
+      // TODO:
+      //   When we have a need to convert some class component to hook component,
+      //   enable "glean" above. We could also add:
+      //   https://www.npmjs.com/package/eslint-plugin-react-prefer-function-component
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"]
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"]
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "mgmcdermott.vscode-language-babel",
+    "wix.vscode-import-cost",
+    "eamodio.gitlens"
+  ]
+}
